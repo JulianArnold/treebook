@@ -7,18 +7,36 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a href="http://localhost:3000/" class="brand"> Treebook </a>
-      <ul class="nav">
-        <li><%= link_to "All Statuses", statuses_path %></li>
-      </ul>
+    <div class="wrap">
+        <div class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <a href="http://localhost:3000/" class="brand"> Treebook </a>
+              <ul class="nav">
+                <li><%= link_to "All Statuses", statuses_path %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <div class="container">
+         <%= yield %>
+      </div>
     </div>
-  </div>
-</div>
-<div class="container">
-  <%= yield %>
+<div>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Designed and built using Twitter's excellent CSS and Javascript libraries.
+            </p>
+            <p>
+                "Code licensed under "
+                <a href="http://www.apache.org/licences/LICENSE-2.0" target="_blank">Apache License v2.0</a>
+                    ", documentation under "
+                <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>
+                    "."
+            </p>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
