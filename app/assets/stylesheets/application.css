@@ -27,7 +27,7 @@ html, body {
 
 .container {
     overflow: auto;
-    /*padding-bottom: 150px;  */
+    /*padding-bottom: 150px;*/
 }
 
 .footer {
@@ -43,7 +43,7 @@ html, body {
 }
 .footer p {
   margin-bottom: 0;
-  color: #777;
+  color: #999999;
 }
 .footer-links {
   margin: 10px 0;
